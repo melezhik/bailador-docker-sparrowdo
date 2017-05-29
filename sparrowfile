@@ -1,2 +1,0 @@
-bash 'echo hello world';
-bash qq{perl6 -e "say 'OK'"}
