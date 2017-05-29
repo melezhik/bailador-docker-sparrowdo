@@ -4,8 +4,9 @@ The example of building docker images for Perl6/Bailador applications using spar
 
 # USAGE
 
-  $ git clone
-  $ cd bailador-docker-sparrowdo && docker build -t bailador .
+    $ git clone
+    $ nano sparrowfile # setup sparrowdo scenario, a simple example is commited  
+    $ cd bailador-docker-sparrowdo && docker build -t bailador .
 
 # Author
 
