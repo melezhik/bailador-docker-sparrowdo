@@ -1,4 +1,3 @@
 bash 'echo hello world';
-bash 'uptime'
-user 'bailador'
-directory '/opt/bailador'
+bash 'uptime';
+directory '/opt/bailador';
