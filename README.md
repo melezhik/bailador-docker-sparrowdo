@@ -14,7 +14,7 @@ The example of running simple Bailador application using docker/sparrowdo
 
 ## Run application
 
-    $ docker run $image_id
+    $ docker run -d -p 3000:3000 $image_id
 
 # Project structure
 
