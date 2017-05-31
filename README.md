@@ -1,30 +1,38 @@
 # SYNOPSIS
 
-The example of building docker images for Perl6/Bailador applications using sparrowdo
+The example of running simple Bailador application using docker/sparrowdo
 
 # USAGE
-
 
 ## Checkout the project
 
     $ git clone
 
-## Create some sparrowdo scenario. 
-
-    $ nano sparrowfile 
-
-* Simple example could be found at ./sparrowfile.examaple.pl6
-
-* Follow [sparrowdo dsl](https://github.com/melezhik/sparrowdo/blob/master/core-dsl.md) documentation for full guide.
-
-CAVEAT - Alpine Linux has poor support at Sparrowdo, some of plugins won't work ( user, group ... ). Don't
-hesitate to drop me an issue if you are interested in full Alpine support.
-
-
 ## Build you image 
 
     $ docker build -t bailador .
 
+## Run application
+
+    $ docker run $image_id
+
+# Project structure
+
+## example.p6w
+
+Simple bailador application
+
+## sparrowfile
+
+Sparrowdo scenario to deploy Bailador 
+
+## entrypoint.sh
+
+Default entrypoint
+
+# See also
+
+[alpine-perl6](https://github.com/JJ/alpine-perl6) - base docker image 
 
 # Author
 
