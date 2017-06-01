@@ -4,7 +4,7 @@ bash 'zef install Path::Iterator';
 
 bash 'zef install TAP::Harness';
 
-bash 'zef HTTP::MultiPartParser';
+bash 'zef install HTTP::MultiPartParser';
 
 bash(q:to/HERE/);
   set -e
