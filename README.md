@@ -1,6 +1,16 @@
 # SYNOPSIS
 
-The example of running simple Bailador application using docker/sparrowdo
+Build a docker image with the latest [Bailador](https://github.com/Bailador/Bailador) source code and
+and running `hello world` application
+
+# Description
+
+This is the project to build docker image with the latest source code of Bailador and simple test application.
+Docker file contains a few instruction, the main logic is hidden in sparrowfile. 
+
+I use sparrowdo to build docker images.
+
+The base image is [alpine-perl6](https://github.com/JJ/alpine-perl6).
 
 # USAGE
 
