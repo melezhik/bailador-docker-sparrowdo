@@ -16,6 +16,13 @@ The example of running simple Bailador application using docker/sparrowdo
 
     $ docker run -d -p 3000:3000 $image_id
 
+## Test application
+
+
+This command should return `hello world` :
+
+    $ curl 127.0.0.1:3000
+
 # Project structure
 
 ## example.p6w
