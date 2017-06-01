@@ -4,6 +4,8 @@ bash 'zef install Path::Iterator';
 
 bash 'zef install TAP::Harness';
 
+bash 'zef HTTP::MultiPartParser';
+
 bash(q:to/HERE/);
   set -e
   cd /var/data/
@@ -15,6 +17,8 @@ bash(q:to/HERE/);
     git clone https://github.com/Bailador/Bailador.git
   fi
 HERE
+
+bash "cd /var/data/Bailado  && zef --depsonly install .";
 
 bash "cd /var/data/Bailador && prove6 -l";
 
