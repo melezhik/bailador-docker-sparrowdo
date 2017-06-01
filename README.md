@@ -1,7 +1,7 @@
 # SYNOPSIS
 
-Build a docker image with the latest [Bailador](https://github.com/Bailador/Bailador) source code and
-and running `hello world` application
+Build a docker image with the latest [Bailador](https://github.com/Bailador/Bailador) source code 
+and running `hello world` application.
 
 # Description
 
