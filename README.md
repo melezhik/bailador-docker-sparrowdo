@@ -8,11 +8,11 @@ The example of running simple Bailador application using docker/sparrowdo
 
     $ git clone
 
-## Build you image 
+## Build image 
 
     $ docker build -t bailador .
 
-## Run application
+## Run application as docker container 
 
     $ docker run -d -p 3000:3000 bailador
 
@@ -24,11 +24,13 @@ This command should return `hello world` when running from host OS:
 
 # Update bailador source code
 
-## build image
+Sometimes you want to check changes made by Bailador developers. 
+Use existed bailador image, run sparrowdo scenario
+to apply latest Bailador changes and update docker image. 
+Then run application as described in the section earlier.
 
-    $ docker build -t bailador .
 
-## run container with bash session
+## use existed image and run container with bash session:
 
     $ docker run -it -p 3000:3000 --entrypoint bash bailador
 
@@ -36,12 +38,20 @@ This command should return `hello world` when running from host OS:
 
     $ sparrowdo --no_sudo --local_mode --sparrowfile=/tmp/sparrowfile
 
+## commit changes
+
+    $ docker ps # to find out image id
+
+    $ docker commit $image_id bailador
+
+    $ docker stop -t 1 $container_id # stop current docker container
+
 ## run application
 
-    perl6 /tmp/example.p6w 
-    Entering the development dance floor: http://0.0.0.0:3000
-    [2017-06-01T11:13:55Z] Started HTTP server.
+As in the section above:
 
+    $ docker run -d -p 3000:3000 bailador
+  
 ## test application 
 
 This command should return `hello world` when running from host OS:
