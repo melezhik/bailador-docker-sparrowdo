@@ -6,7 +6,7 @@ and running `hello world` application.
 # Description
 
 This is the project to build docker image with the latest source code of Bailador and simple test application.
-Docker file contains a few instruction, the main logic is hidden in sparrowfile. 
+Docker file contains a few instructions, the main logic is hidden in sparrowfile. 
 
 I use sparrowdo to build docker images.
 
