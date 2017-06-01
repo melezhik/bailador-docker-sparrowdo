@@ -1,2 +1,20 @@
-bash 'zef install Bailador';
+directory '/var/data';
+
+bash 'zef install Path::Iterator';
+
+bash(q:to/HERE/);
+  set -e
+  cd /var/data/
+  if test -d  /var/data/Bailador; then
+    cd Bailador
+    git pull
+    cd ../
+  else
+    git clone https://github.com/Bailador/Bailador.git
+  fi
+
+  cd Bailador
+  zef install .
+
+HERE
 

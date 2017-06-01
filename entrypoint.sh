@@ -1,3 +1,4 @@
 #!/bin/bash
-perl6 /sparrowdo/example.p6w
+
+perl6 /tmp/example.p6w
 
