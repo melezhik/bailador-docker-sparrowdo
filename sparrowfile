@@ -18,7 +18,7 @@ bash(q:to/HERE/);
   fi
 HERE
 
-bash "cd /var/data/Bailado  && zef --depsonly install .";
+bash "cd /var/data/Bailador  && zef --depsonly install .";
 
 bash "cd /var/data/Bailador && prove6 -l";
 
