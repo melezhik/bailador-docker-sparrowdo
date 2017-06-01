@@ -39,9 +39,14 @@ And, finally run updated the application the same way as described in the sectio
 
 ## run sparrowdo scenario inside container to apply source code changes:
 
+    # get Bailador changes and apply them
     $ sparrowdo --no_sudo --local_mode --sparrowfile=/tmp/sparrowfile
-    $ perl /tmp/example.p6w # to make it sure that application run on new code
-    $ ^C # to stop the application
+
+    # to make it sure that the application runs on new code
+    $ perl /tmp/example.p6w 
+
+    # to stop the application
+    $ ^C 
 
 ## commit changes
 
